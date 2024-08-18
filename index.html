@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Date Calculator</h1>
+        <form id="date-form">
+            <label for="days">Enter Number of Days:</label>
+            <input type="number" id="days" required>
+
+            <label for="direction">Calculate:</label>
+            <select id="direction">
+                <option value="before">Days Before Today</option>
+                <option value="after">Days After Today</option>
+            </select>
+
+            <label for="start-date">Or Choose Start Date:</label>
+            <input type="date" id="start-date">
+
+            <label for="format">Date Format:</label>
+            <select id="format">
+                <option value="MM/DD/YYYY">MM/DD/YYYY</option>
+                <option value="DD/MM/YYYY">DD/MM/YYYY</option>
+                <option value="YYYY-MM-DD">YYYY-MM-DD</option>
+            </select>
+
+            <button type="button" onclick="calculateDate()">Calculate Date</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
